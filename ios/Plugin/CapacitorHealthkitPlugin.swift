@@ -77,7 +77,12 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
         case "bloodPressureDiastolic":
             return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureDiastolic)!
         case "appleWalkingSteadiness":
-            return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!
+            if #available(iOS 15.0, *) {
+                return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!
+            } else {
+                return nil
+            }
+            
         default:
             return nil
         }
