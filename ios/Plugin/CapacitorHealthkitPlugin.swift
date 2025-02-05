@@ -129,6 +129,8 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
                 types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureSystolic)!)
             case "bloodPressureDiastolic":
                 types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureDiastolic)!)
+            case "appleWalkingSteadiness":
+                types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!)
             default:
                 print("no match in case: " + item)
             }
@@ -419,6 +421,9 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
                 } else if sampleName == "restingHeartRate" {
                     unit = HKUnit(from: "count/min")
                     unitName = "BPM"
+                } else if sampleName == "appleWalkingSteadiness" {
+                    unit = HKUnit.percent()
+                    unitName = "percent"
                 } else if sampleName == "weight" {
                     unit = HKUnit.gramUnit(with: .kilo)
                     unitName = "kilogram"
