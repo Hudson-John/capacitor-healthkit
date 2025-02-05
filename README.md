@@ -197,8 +197,8 @@ multipleIsEditionAuthorized(queryOptions: MultipleEditionQuery) => Promise<void>
 
 Checks if there is writing permission for multiple sample types. This function has not been tested.
 
-| Param              | Type                                                                  | Description                                                                |
-| ------------------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Param              | Type                                                                  | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | **`queryOptions`** | <code><a href="#multipleeditionquery">MultipleEditionQuery</a></code> | defines the sampletypes for which you need to check for writing permission. |
 
 --------------------
@@ -259,8 +259,8 @@ This is used for checking writing permissions.
 
 This is used for checking writing permissions.
 
-| Prop              | Type                   |
-| ----------------- | ---------------------- |
+| Prop              | Type                  |
+| ----------------- | --------------------- |
 | **`sampleNames`** | <code>string[]</code> |
 
 </docgen-api>

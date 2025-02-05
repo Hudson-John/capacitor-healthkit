@@ -76,6 +76,8 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
             return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureSystolic)!
         case "bloodPressureDiastolic":
             return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureDiastolic)!
+        case "appleWalkingSteadiness":
+            return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!
         default:
             return nil
         }
