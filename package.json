@@ -1,6 +1,6 @@
 {
   "name": "@johnjasonhudson/capacitor-healthkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Capacitor HealthKit plugin with appleWalkingSteadiness support",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
