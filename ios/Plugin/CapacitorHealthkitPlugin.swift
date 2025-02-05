@@ -536,6 +536,7 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
         }
     }
     @objc func queryHKitSampleType(_ call: CAPPluginCall) {
+        print("Received options: \(call.options)") // Debug log to inspect incoming data
         guard let _sampleName = call.options["sampleName"] as? String else {
             return call.reject("Must provide sampleName")
         }
