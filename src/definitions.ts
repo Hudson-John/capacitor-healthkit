@@ -162,5 +162,6 @@ export enum SampleNames {
   BODY_TEMPERATURE = 'bodyTemperature',
   BLOOD_PRESSURE_SYSTOLIC = 'bloodPressureSystolic',
   BLOOD_PRESSURE_DIASTOLIC = 'bloodPressureDiastolic',
-  APPLE_WALKING_STEADINESS = 'appleWalkingSteadiness'
+  APPLE_WALKING_STEADINESS = 'appleWalkingSteadiness',
+  WALKING_ASYMMETRY_PERCENTAGE = 'walkingAsymmetryPercentage'
 }

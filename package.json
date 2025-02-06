@@ -1,6 +1,6 @@
 {
   "name": "@johnjasonhudson/capacitor-healthkit",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Custom Capacitor HealthKit plugin with appleWalkingSteadiness support",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -9,16 +9,16 @@
   "files": [
     "dist/",
     "ios/Plugin/",
-    "PerfoodCapacitorHealthkit.podspec"
+    "JohnjasonhudsonCapacitorHealthkit.podspec"
   ],
   "author": "John Hudson",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perfood/capacitor-healthkit.git"
+    "url": "git+https://github.com/johnjasonhudson/capacitor-healthkit.git"
   },
   "bugs": {
-    "url": "https://github.com/perfood/capacitor-healthkit/issues"
+    "url": "https://github.com/johnjasonhudson/capacitor-healthkit/issues"
   },
   "keywords": [
     "capacitor",

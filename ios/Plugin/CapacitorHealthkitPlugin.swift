@@ -82,6 +82,12 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
             } else {
                 return nil
             }
+        case "walkingAsymmetryPercentage":
+            if #available(iOS 15.0, *) {
+                return HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.walkingAsymmetryPercentage)!
+            } else {
+                return nil
+            }
             
         default:
             return nil
@@ -132,6 +138,10 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
             case "appleWalkingSteadiness":
                 if #available(iOS 15.0, *) {
                     types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!)
+                }
+            case "walkingAsymmetryPercentage":
+                if #available(iOS 15.0, *) {
+                    types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.walkingAsymmetryPercentage)!)
                 }
             default:
                 print("no match in case: " + item)
@@ -426,6 +436,10 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
                 } else if sampleName == "appleWalkingSteadiness" {
                     unit = HKUnit.percent()
                     unitName = "percent"
+                } else if sampleName == "walkingAsymmetryPercentage" {
+                    unit = HKUnit.percent()
+                    unitName = "percent"
+                }
                 } else if sampleName == "weight" {
                     unit = HKUnit.gramUnit(with: .kilo)
                     unitName = "kilogram"
