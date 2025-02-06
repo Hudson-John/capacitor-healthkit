@@ -439,7 +439,6 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
                 } else if sampleName == "walkingAsymmetryPercentage" {
                     unit = HKUnit.percent()
                     unitName = "percent"
-                }
                 } else if sampleName == "weight" {
                     unit = HKUnit.gramUnit(with: .kilo)
                     unitName = "kilogram"
