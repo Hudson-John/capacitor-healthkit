@@ -130,7 +130,9 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
             case "bloodPressureDiastolic":
                 types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureDiastolic)!)
             case "appleWalkingSteadiness":
-                types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!)
+                if #available(iOS 15.0, *) {
+                    types.insert(HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleWalkingSteadiness)!)
+                }
             default:
                 print("no match in case: " + item)
             }
@@ -541,7 +543,7 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
         }
     }
     @objc func queryHKitSampleType(_ call: CAPPluginCall) {
-        print("Received options: \(call.options)") // Debug log to inspect incoming data
+        print("Received options: \(String(describing: call.options))") // Debug log to inspect incoming data
         guard let _sampleName = call.options["sampleName"] as? String else {
             return call.reject("Must provide sampleName")
         }
