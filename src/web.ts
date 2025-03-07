@@ -22,6 +22,10 @@ export class CapacitorHealthkitWeb
     throw this.unimplemented('Not implemented on web.');
   }
 
+  async queryWalkingAsymmetryPercentage(_queryOptions: SingleQueryOptions): Promise<any> {
+    throw this.unimplemented('Not implemented on web.');
+  }
+
   async isAvailable(): Promise<void> {
     throw this.unimplemented('Not implemented on web.');
   }

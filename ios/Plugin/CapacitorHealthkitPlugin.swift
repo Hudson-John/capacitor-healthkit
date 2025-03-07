@@ -705,4 +705,6 @@ public class CapacitorHealthkitPlugin: CAPPlugin {
         }
         healthStore.execute(query)
     }
+
+    
 }

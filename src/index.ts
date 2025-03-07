@@ -1,5 +1,4 @@
 import { registerPlugin } from '@capacitor/core';
-
 import type { CapacitorHealthkitPlugin } from './definitions';
 
 const CapacitorHealthkit = registerPlugin<CapacitorHealthkitPlugin>(
@@ -11,3 +10,5 @@ const CapacitorHealthkit = registerPlugin<CapacitorHealthkitPlugin>(
 
 export * from './definitions';
 export { CapacitorHealthkit };
+
+
